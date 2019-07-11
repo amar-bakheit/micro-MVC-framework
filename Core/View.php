@@ -12,7 +12,7 @@ class View {
      * 
      */
 
-     public static function render($view) {
+     public static function render($view, $args = []) {
         $file = "../App/Resources/Views/$view";
         if(is_readable($file)) {
             require $file;
